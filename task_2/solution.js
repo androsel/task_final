@@ -31,7 +31,7 @@ function calcDiscount(sum, min, discount) {
    let = discountSum; // создайте переменную discountSum
 
    if sum >= min { // если productsSum больше или равно discountMinSum,
-    discountSum = (sum / 100 * discount); // то присвойте discountSum значение discountPart процентов от productsSum,
+    discountSum = sum / 100 * discount; // то присвойте discountSum значение discountPart процентов от productsSum,
     } else sum = 0; // иначе присвойте discountSum значение 0
 
     // Конец решения задания №2.2.
