@@ -1,21 +1,21 @@
 // Задание 4.1. Вывод карточек товаров
 
-function parseProducts(JSON) {
-    let data = JSON.parse(JSON);
+function parseProducts(json) {
+    let data = JSON.parse(json);
     let products = data.products;
         return products;
    
 }
 
-function renderProductsCards(JSON){   
+function renderProductsCards(json){   
     clearProducts();
    renderProductsCards (products);  
- products = parseProducts(JSON);
+ products = parseProducts(json);
   
   
 for (let i = 0; i < length; i += 1) {
   length = products.length;
-    addproducts (products[i]);  
+    addProducts (products[i]);  
  }
  } 
 
