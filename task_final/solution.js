@@ -53,5 +53,3 @@ function sendRequest(name, phone, address, goods, sum) {
 }
 
 
-product - объект вида {id: id, title: title, count: count, price: price}
-    // например, {id: 1, title: 'Пицца', count: 5, price: '500.00'}, где
