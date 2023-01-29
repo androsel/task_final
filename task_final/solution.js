@@ -43,11 +43,15 @@ function sendRequest(name, phone, address, goods, sum) {
     }
 
     data.order.address = address;
-    data.order.sum = name + phone + address + goods + sum;
+    data.order.sum = client.name + client.phone + order.address + goods + order.sum;
 
     data.client = 'Иван';
 
-    let jsonData = JSON.stringify({data});
+    let jsonData = JSON.stringify(data);
 
     return jsonData;
 }
+
+
+product - объект вида {id: id, title: title, count: count, price: price}
+    // например, {id: 1, title: 'Пицца', count: 5, price: '500.00'}, где
