@@ -43,7 +43,9 @@ function sendRequest(name, phone, address, goods, sum) {
     }
 
     data.order.address = address;
-    data.order.sum = client.name + client.phone + order.address + goods + order.sum;
+    data.order.sum = name + phone + address + goods + sum;
+    
+   // data.order.sum = name + client.phone + order.address + goods + order.sum;
 
     data.client = 'Иван';
 
