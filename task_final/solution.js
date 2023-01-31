@@ -42,10 +42,10 @@ function sendRequest(name, phone, address, goods, sum) {
     let countOfGoods = goods.length;
 
     for (let i = 0; i < countOfGoods; i += 1) {
-        data.goods.push({title: goods[i].title,count: goods[i].count});
+        data.goods.push({title: goods[i].title, count: goods[i].count});
     }
 
-    data.order.address =  "ул " +  address.street ,  + " дом " + adress.house, + " подъезд " + adress.entrance,  + " этаж  " + address.floor,  + "кв " + address.flat;
+    data.order.address =  "ул " +  address.street ,  + " дом " + address.house, + " подъезд " + address.entrance,  + " этаж  " + address.floor,  + "кв " + address.flat;
     data.order.sum = sum;
     data.client = name + " "  + phone;
 
