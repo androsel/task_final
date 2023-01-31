@@ -33,7 +33,7 @@
 //    }
 // }
 
-function sendRequest(name, phone, address, goods, sum) {
+function sendRequest(name, phone, goods, sum) {
     let data = {goods: [], order: {}};
 
     
